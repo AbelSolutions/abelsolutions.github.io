@@ -1,0 +1,132 @@
+---
+layout: default
+---
+
+<div class="clearfix"></div>
+<div id="home">
+
+	<div id="hero">
+		<!-- Universal Access -->
+		<div class="content_container">
+			<div class="box" id="universal-access">
+				<div class="content">
+					<%= image_tag "hero_mobile.png", :id => "hero-mobile", :class => "fade" %>
+					<div class="text">
+						<h1>Manage More</h1>
+						<p>
+							Abel mobile has been developed for a simple user experience so no matter where your opportunities take you never leave your information system behind.
+						</p>
+						<a href="/services/universal-access" class="btn">Learn More</a>
+					</div>
+				</div>
+				<%= render "tabs" %>
+			</div>
+			<!-- Improved Performance -->
+			<div class="box"  id="improved-performance">
+				<div class="content">
+          <% origin = request.env['HTTP_ORIGIN'] || "http://localhost:59443" %>
+          <iframe class="video" id="ytplayer" width="560" height="315" src="http://www.youtube.com/embed/3bwPBw9VQrU?rel=0&autohide=1&controls=0&enablejsapi=1&origin=<%= origin %>" frameborder="0" allowfullscreen></iframe>
+          <script>
+
+          var tag = document.createElement('script');
+          tag.src = "//www.youtube.com/iframe_api";
+          var firstScriptTag = document.getElementsByTagName('script')[0];
+          firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+          // console.log("script run");
+
+          window.youtube_playing = false;
+
+          var player;
+          function onYouTubeIframeAPIReady() {
+            console.log("youtube player ready");
+            player = new YT.Player('ytplayer', {
+              events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+              }
+            });
+          }
+
+          // 4. The API will call this function when the video player is ready.
+          function onPlayerReady(event) {
+            // console.log("player ready");
+          }
+
+          // 5. The API calls this function when the player's state changes.
+          //    The function indicates that when playing a video (state=1),
+          //    the player should play for six seconds and then stop.
+          function onPlayerStateChange(event) {
+            if (event.data == YT.PlayerState.PLAYING) {
+              // console.log("player playing");
+              window.youtube_playing = true;
+            }
+            if (event.data == YT.PlayerState.ENDED || event.data == YT.PlayerState.PAUSED) {
+              // console.log("player stopped");
+              window.youtube_playing = false;
+            }
+          }
+
+          function stopVideo() {
+              player.stopVideo();
+          }
+          </script>
+
+
+          <div class="text">
+						<h1>Optimise Your Business</h1>
+						<p>
+							We bring together insight, pragmatism, problem-solving methodologies and hands on experience to improve the return on your IT investment.
+						</p>
+						<a href="/services/erp-implementation-experts" class="btn">Learn More</a>
+					</div>
+				</div>
+				<%= render "tabs" %>
+			</div>
+			<div class="box" id="improved-profitability">
+				<div class="content">
+					<div class="text">
+						<h1>Solutions For Success</h1>
+						<p>
+							Our pragmatic partnership based approach improves profitability through people and organizational excellence.
+						</p>
+						<a href="/services/profitability-improvement-experts" class="btn">Learn More</a>
+					</div>
+				</div>
+				<%= render "tabs" %>
+			</div>
+			<div class="box" id="unique-functionality">
+				<div class="content">
+					<div class="text">
+						<h1>Transform Your Infrastructure</h1>
+						<p>
+							We create a technical infrastructure which enables your organisation to meet the increasing demands of today’s business environment.
+						</p>
+						<a href="/services/systems-design-specialists" class="btn">Learn More</a>
+					</div>
+				</div>
+				<%= render "tabs" %>
+			</div>
+		</div>
+	</div>
+
+	<div class="content_container">
+		<div class="row second">
+			<div class="case-studies">
+				<h1>Case Studies</h1>
+				<p class="header">
+					<a href="/case_studies">View All Case Studies</a>
+					or
+					<a href="/case_studies">View by Industry</a>
+				</p>
+				<div class="row">
+					<%= render @case_studies, :abstract => true if @case_studies.present? %>
+				</div>
+			</div>
+			<div class="testimonials">
+				<h1>Testimonial</h1>
+				<%= render @testimonial if @testimonial.present? %>
+			</div>
+		</div>
+	</div>
+
+</div>

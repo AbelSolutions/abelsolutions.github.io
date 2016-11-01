@@ -1,0 +1,201 @@
+---
+layout: default
+---
+<!-- <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+</article> -->
+{% include subheader.html %}
+
+<div id="erp">
+	<div id="hero">
+		<div id="honeycomb">
+			<div class="content_container">
+				<div class="row odd">
+					<%= honeycomb "ecommerce" do %>
+  					<%= sub_honeycomb "ecommerce", "web-store-fronts", "Web Store Fronts" %>
+  					<%= sub_honeycomb "ecommerce", "integration-to-edi", "Integration to EDI" %>
+  					<%= sub_honeycomb "ecommerce", "apple-ios-apps", "Apple Apps" %>
+  					<%= sub_honeycomb "ecommerce", "more", "More &hellip;".html_safe, true %>
+  				<% end %>
+					<%= honeycomb "integration" do %>
+  					<%= sub_honeycomb "integration", "integration-to-design-software", "To Design Software" %>
+  					<%= sub_honeycomb "integration", "integration-to-websites", "Websites" %>
+  					<%= sub_honeycomb "integration", "integrated-3rd-party-logistics", "Logistic Companies" %>
+            <%= sub_honeycomb "integration", "integration-to-ecommerce-platforms", "Ecommerce Platforms" %>
+            <%= sub_honeycomb "integration", "integration-to-bi-tools", "BI Tools" %>
+  					<%= sub_honeycomb "integration", "more", "More &hellip;".html_safe, true %>
+  				<% end %>
+					<%= honeycomb "bi-tools", "BI Tools" do %>
+  					<%= sub_honeycomb "bi-tools", "inbuilt-report-writer", "Inbuilt Report Writer" %>
+  					<%= sub_honeycomb "bi-tools", "web-dashboards", "Web Dashboards" %>
+  					<%= sub_honeycomb "bi-tools", "sql-extraction", "SQL Extraction" %>
+            <%= sub_honeycomb "bi-tools", "3rd-party-bi-tools", "Third Party BI Tools" %>
+  					<%= sub_honeycomb "bi-tools", "more", "More &hellip;".html_safe, true %>
+  				<% end %>
+					<%= honeycomb "inventory-management", "Inventory Management" do %>
+  					<%= sub_honeycomb "inventory-management", "mulitple-warehouses", "Mulitple Warehouses" %>
+  					<%= sub_honeycomb "inventory-management", "traceability", "Traceability" %>
+            <%= sub_honeycomb "inventory-management", "units-of-measure", "Units of Measure (UOM)" %>
+  					<%= sub_honeycomb "inventory-management", "inventory-costing-controls", "Inventory Costing Controls" %>
+            <%= sub_honeycomb "inventory-management", "reorder-processes", "Reorder Processes" %>
+            <%#= sub_honeycomb "inventory-management", "stocktakes-and-revaluations", "Stocktakes and Revaluations" %>
+  					<%= sub_honeycomb "inventory-management", "more", "More &hellip;".html_safe, true %>
+  				<% end %>
+					<%= honeycomb "pricing-management", "Pricing Management" do %>
+  					<%= sub_honeycomb "pricing-management", "base-pricing", "Base Pricing" %>
+  					<%= sub_honeycomb "pricing-management", "cost-pricing", "Cost Pricing" %>
+  					<%= sub_honeycomb "pricing-management", "sales-pricing", "Sales Pricing" %>
+            <%= sub_honeycomb "pricing-management", "other-pricing", "Other Pricing" %>
+  					<%= sub_honeycomb "pricing-management", "more", "More &hellip;".html_safe, true %>
+  				<% end %>
+					<%= honeycomb "approvals" do %>
+  					<%= sub_honeycomb "approvals", "control-procurement", "Control Procurement" %>
+  					<%= sub_honeycomb "approvals", "traceability-compliance", "Traceability and Compliance" %>
+  					<%= sub_honeycomb "approvals", "definable-user-matrixes", "Definable User Matricies" %>
+  					<%= sub_honeycomb "approvals", "more", "More &hellip;".html_safe, true %>
+  				<% end %>
+				</div>
+				<div class="row even">
+					<%= honeycomb "system-security", "System Security" do %>
+            <%= sub_honeycomb "system-security", "user-specific-settings"   , "User Specific Settings" %>
+            <%= sub_honeycomb "system-security", "users-specific-dashboards", "Users Specific Dashboards" %>
+            <%= sub_honeycomb "system-security", "secure-database"          , "Secure Database" %>
+  					<%= sub_honeycomb "system-security", "more", "More &hellip;".html_safe, true %>
+  				<% end %>
+					<%= honeycomb "distribution" do %>
+            <%= sub_honeycomb "distribution", "supplier-information" , "Supplier Information" %>
+            <%= sub_honeycomb "distribution", "customer-information" , "Customer Information" %>
+            <%= sub_honeycomb "distribution", "warehousing"          , "Warehousing" %>
+            <%= sub_honeycomb "distribution", "logistics"            , "Logistics" %>
+            <%= sub_honeycomb "distribution", "integration"          , "Integration" %>
+  					<%= sub_honeycomb "distribution", "more", "More &hellip;".html_safe, true %>
+  				<% end %>
+					<%= honeycomb "financials" do %>
+						<%= sub_honeycomb "financials", "general-ledger", "General Ledger" %>
+						<%= sub_honeycomb "financials", "cash-management", "Cash Management" %>
+						<%= sub_honeycomb "financials", "accounts-payable", "Accounts Payable" %>
+						<%= sub_honeycomb "financials", "accounts-receivable", "Accounts Receivable" %>
+						<%= sub_honeycomb "financials", "fixed-assets", "Fixed Assets" %>
+						<%= sub_honeycomb "financials", "more", "More &hellip;".html_safe, true %>
+					<% end %>
+					<%= honeycomb "sales" do %>
+            <%= sub_honeycomb "sales", "simplified-order-entry"      , "Simplified Order Entry" %>
+            <%= sub_honeycomb "sales", "traceability-of-supply-chain", "Traceability of supply chain" %>
+            <%= sub_honeycomb "sales", "mobile-sales"                , "Mobile Sales" %>
+            <%= sub_honeycomb "sales", "crm-functionality"           , "CRM functionality" %>
+  					<%= sub_honeycomb "sales", "more", "More &hellip;".html_safe, true %>
+  				<% end %>
+					<%= honeycomb "crm", "CRM" do %>
+            <%= sub_honeycomb "crm", "sales-pipeline"    , "Sales Pipeline" %>
+            <%= sub_honeycomb "crm", "campaign-building" , "Campaign Building" %>
+            <%= sub_honeycomb "crm", "task-management"   , "Task Management" %>
+            <%= sub_honeycomb "crm", "notes-and-messages", "Notes and Messages" %>
+            <%= sub_honeycomb "crm", "abel-emailing"     , "Abel Emailing" %>
+            <%#= sub_honeycomb "crm", "mobile-crm"        , "Mobile CRM" %>
+  					<%= sub_honeycomb "crm", "more", "More &hellip;".html_safe, true %>
+  				<% end %>
+				</div>
+				<div class="row odd">
+					<%= honeycomb "asset-management", "Asset Management" do %>
+            <%= sub_honeycomb "asset-management", "fixed-assets-management"          , "Fixed Assets Management" %>
+            <%= sub_honeycomb "asset-management", "management-of-plant-and-equipment", "Management of Plant and Equipment"%>
+            <%= sub_honeycomb "asset-management", "mobile-integration"               , "Mobile Integration"%>
+  					<%= sub_honeycomb "asset-management", "more", "More &hellip;".html_safe, true %>
+  				<% end %>
+					<%= honeycomb "production-planning-scheduling", "Production, Planning & Scheduling" do %>
+            <%= sub_honeycomb "production-planning-scheduling", "production-scheduling"                   , "Production Scheduling" %>
+            <%= sub_honeycomb "production-planning-scheduling", "material-requirements-planning"    , "Material Requirements Planning" %>
+            <%= sub_honeycomb "production-planning-scheduling", "manufacturing-resource-planning", "Manufacturing Resource Planning" %>
+            <%= sub_honeycomb "production-planning-scheduling", "master-production-scheduling"            , "Master Production Scheduling" %>
+            <%= sub_honeycomb "production-planning-scheduling", "capacity-requirements-planning"          , "Capacity Requirements Planning" %>
+  					<%= sub_honeycomb "production-planning-scheduling", "more", "More &hellip;".html_safe, true %>
+  				<% end %>
+					<%= honeycomb "supply-chain", "Supply Chain" do %>
+            <%= sub_honeycomb "supply-chain", "supplier-orders"  , "Supplier Orders"   %>
+            <%= sub_honeycomb "supply-chain", "supplier-delivery", "Supplier Delivery" %>
+            <%= sub_honeycomb "supply-chain", "supplier-return"  , "Supplier Return"   %>
+            <%= sub_honeycomb "supply-chain", "shipping-delivery", "Shipping Delivery" %>
+            <%= sub_honeycomb "supply-chain", "supplier-invoice" , "Supplier Invoice"  %>
+  					<%= sub_honeycomb "supply-chain", "more", "More &hellip;".html_safe, true %>
+  				<% end %>
+					<%= honeycomb "manufacturing-production", "Manufacturing & Production" do %>
+  					<%= sub_honeycomb "manufacturing-production", "production-workflows", "Production Workflows" %>
+  					<%= sub_honeycomb "manufacturing-production", "bill-of-materials", "Bill of Materials" %>
+  					<%= sub_honeycomb "manufacturing-production", "production-costing", "Production Costing" %>
+            <%= sub_honeycomb "manufacturing-production", "production-planning", "Production Planning" %>
+            <%= sub_honeycomb "manufacturing-production", "production-scheduling", "Production Scheduling" %>
+  					<%= sub_honeycomb "manufacturing-production", "more", "More &hellip;".html_safe, true %>
+  				<% end %>
+					<%= honeycomb "jobbing" do %>
+  					<%= sub_honeycomb "jobbing", "bill-of-materials-boms", "BOMS" %>
+  					<%= sub_honeycomb "jobbing", "designer-bill-of-materials-boms", "Designer BOMS" %>
+  					<%= sub_honeycomb "jobbing", "job-costing", "Job Costing" %>
+  					<%= sub_honeycomb "jobbing", "external-manufacturing", "External Manufacturing" %>
+  					<%= sub_honeycomb "jobbing", "defect-and-rework-tracking", "Defect and Rework Tracking" %>
+  					<%= sub_honeycomb "jobbing", "more", "More &hellip;".html_safe, true %>
+  				<% end %>
+					<%= honeycomb "mobile" do %>
+  					<%= sub_honeycomb "mobile", "mobile-sales", "Mobile Sales" %>
+  					<%= sub_honeycomb "mobile", "mobile-asset-management", "Mobile Asset Management" %>
+  					<%= sub_honeycomb "mobile", "designer-mobile-solutions", "Designer Mobile Solutions" %>
+            <%= sub_honeycomb "mobile", "mobile-warehousing", "Mobile Warehousing" %>
+  					<%= sub_honeycomb "mobile", "more", "More &hellip;".html_safe, true %>
+  				<% end %>
+				</div>
+				<div class="row even">
+					<%= honeycomb "workflow" do %>
+  					<%= sub_honeycomb "workflow", "desktops", "Desktops" %>
+  					<%= sub_honeycomb "workflow", "financial-desktops", "Financial Desktops" %>
+  					<%= sub_honeycomb "workflow", "distribution-desktops", "Distribution Desktops" %>
+            <%= sub_honeycomb "workflow", "jobbing-desktops", "Jobbing Desktops" %>
+  					<%= sub_honeycomb "workflow", "more", "More &hellip;".html_safe, true %>
+  				<% end %>
+					<%= honeycomb "quality-assurance", "Quality Assurance" do %>
+  					<%= sub_honeycomb "quality-assurance", "compliance", "Compliance" %>
+  					<%= sub_honeycomb "quality-assurance", "quality-controls", "Quality Controls" %>
+  					<%= sub_honeycomb "quality-assurance", "key-features", "Key Features" %>
+  					<%= sub_honeycomb "quality-assurance", "more", "More &hellip;".html_safe, true %>
+  				<% end %>
+					<%= honeycomb "human-resource-management", "Human Resource Management" do %>
+  					<%= sub_honeycomb "human-resource-management", "payroll", "Payroll" %>
+  					<%= sub_honeycomb "human-resource-management", "human-resources", "Human Resources" %>
+  					<%= sub_honeycomb "human-resource-management", "organisational-data", "Organisational Data" %>
+  					<%= sub_honeycomb "human-resource-management", "more", "More &hellip;".html_safe, true %>
+  				<% end %>
+					<%= honeycomb "mrp", "MRP" do %>
+  					<%= sub_honeycomb "mrp", "material-requirements-planning-mrp-i", "Material Requirements Planning" %>
+  					<%= sub_honeycomb "mrp", "manufacturing-resource-planning-mrp-ii", "Manufacturing Resource Planning" %>
+  					<%= sub_honeycomb "mrp", "manufacturing-and-production", "Manufacturing and Production" %>
+            <%= sub_honeycomb "mrp", "manufacturing-production-planning-and-scheduling", "Production, Planning and Scheduling" %>
+  					<%= sub_honeycomb "mrp", "more", "More &hellip;".html_safe, true %>
+  				<% end %>
+					<%= honeycomb "plm", "PLM" do %>
+  					<%= sub_honeycomb "plm", "product-life-cycle-intelligence", "Product life cycle intelligence" %>
+  					<%= sub_honeycomb "plm", "project-portfolio-and-bid-management", "Project, portfolio, and bid management" %>
+  					<%= sub_honeycomb "plm", "plm-for-apparel", "PLM for Apparel" %>
+  					<%= sub_honeycomb "plm", "more", "More &hellip;".html_safe, true %>
+  				<% end %>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content_container">
+    <a name="content"></a>
+		<%= render "refinery/erp_side_menu" %>
+    <a name="more"></a>
+		<section id="body">
+			<%= @page.content_for(:body).html_safe %>
+  		<section id="snippets">
+  			<%= render @snippets unless @snippets.nil? %>
+  		</section>
+		</section>
+	</div>
+</div>

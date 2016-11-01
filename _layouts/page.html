@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+{% include subheader.html %}
+
+<div class="content_container">
+  <section id="side_menu">
+     <nav>
+      <div class="root">
+        <%= link_to @page.root.title, refinery.marketable_page_url(@page.root) unless @page.nil? %>
+      </div>
+      <ul>
+        <%= render :partial => '/refinery/menu_branch',
+        :collection => refinery_menu_pages.select{|p| p.parent_id == @page.root.id},
+        :locals => {
+          :hide_children => false,
+          :apply_css => true
+        } unless @page.nil? -%>
+      </ul>
+     </nav>
+  </section>
+
+  <section id="body">
+    {{ content }}
+  </section>
+</div>

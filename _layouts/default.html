@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    <div id="page_container">
+      <header id="header">
+        {% include header.html %}
+      </header>
+
+    <section id="page">
+      {{ content }}
+    </section>
+
+    <footer>
+      {% include footer.html %}
+    </footer>
+
+  </body>
+
+</html>

@@ -1,0 +1,142 @@
+---
+layout: default
+title: Contact
+permalink: /contact/
+---
+
+{% include subheader.html %}
+
+<div id="contact">
+  <div class="content_container">
+    <section id="side_menu" class="contact">
+        <h1>Contact</h1>
+        <ul id="locations">
+          <li id="new-zealand-contact-details" class="selected">New Zealand</li>
+          <li id="sydney-contact-details">Sydney</li>
+          <li id="melbourne-contact-details">Melbourne</li>
+          <li id="usa-contact-details">USA</li>
+        </ul>
+        <div class="location" id="new-zealand">
+        	<div>Abel Solutions Limited</div>
+        	<a class="address" href="http://goo.gl/maps/SMO4b">
+        		Floor 3<br/>
+            95A Ascot Avenue<br/>
+        		Remuera<br/>
+            Auckland 1051
+        	</a>
+
+        	<div class="postal-address">
+        		Private Bag 87305<br/>
+        		Auckland, New Zealand
+        	</div>
+
+        	<div class="telephone">
+        		<span class="key">
+        			Phone
+        		</span>
+        		<span class="value">
+        			+64 (9) 526 5210
+        		</span>
+        	</div>
+        	<div class="fax">
+        		<span class="key">
+        			Fax
+        		</span>
+        		<span class="value">
+        			+64 (9) 526 5214
+        		</span>
+        	</div>
+        	<div class="telephone">
+        		<span class="key">
+        			Sales
+        		</span>
+        		<span class="value">
+        			0800 ABEL SALES
+        		</span>
+        	</div>
+        	<div class="email">
+        		<span class="key">
+        			Email
+        		</span>
+        		<span class="value">
+        			<%= mail_to "info@abelsolutions.co.nz", "info@abelsolutions.co.nz", :encode => :hex %>
+        		</span>
+        	</div>
+        </div>
+        <div class="location" id="sydney" style="display:none;">
+        	<div>Abel Solutions Australia Pty Ltd</div>
+        	<a class="address" href="http://goo.gl/maps/oHRov">
+        		Level 9<br/>
+        		Avaya House, 123 Epping Road<br/>
+        		North Ryde, NSW 2113<br>
+        		Australia
+        	</a>
+
+        	<div class="telephone">
+        		<span class="key">
+        			Phone
+        		</span>
+        		<span class="value">
+        			 +61 (2) 9888-3355
+        		</span>
+        	</div>
+        	<div class="telephone">
+        		<span class="key">
+        			Sales
+        		</span>
+        		<span class="value">
+              +61 (2) 8188-2749
+        		</span>
+        	</div>
+        	<div class="email">
+        		<span class="key">
+        			Email
+        		</span>
+        		<span class="value">
+        			<%= mail_to "info@abelsolutions.com.au", "info@abelsolutions.com.au", :encode => :hex %>
+        		</span>
+        	</div>
+        </div>
+
+    </section>
+
+    <section id='body'>
+      <%#= content_for :body %>
+      <%#= render :partial => "/refinery/content_page" %>
+      <%= @page.content_for(:body).html_safe %>
+      <div class='inquiries'>
+        <%= form_for [refinery, :inquiries, @inquiry] do |f| %>
+          <%= render :partial => "/refinery/admin/error_messages",
+                     :locals => {
+                       :object => @inquiry,
+                       :include_object_name => true
+                     } %>
+          <div class="field">
+            <%#= f.required_label :name, :class => 'placeholder-fallback' %>
+            <%= f.text_field :name, :class => 'text', :required => 'required', :placeholder => t('name', :scope => 'activerecord.attributes.refinery/inquiries/inquiry') %>
+          </div>
+          <div class="field">
+            <%#= f.required_label :email, :class => 'placeholder-fallback' %>
+            <%= f.email_field :email, :class => 'text email', :required => 'required', :placeholder => t('email', :scope => 'activerecord.attributes.refinery/inquiries/inquiry') %>
+          </div>
+          <div class="field">
+            <%#= f.label :phone, :class => 'placeholder-fallback' %>
+            <%= f.text_field :company, :class => 'text company', :placeholder => "Company" %>
+          </div>
+          <div class="field">
+            <%#= f.label :phone, :class => 'placeholder-fallback' %>
+            <%= f.text_field :industry, :class => 'text industry', :placeholder => "Industry" %>
+          </div>
+          <div class='field message_field'>
+            <%#= f.required_label :message, :class => 'placeholder-fallback' %>
+            <%= f.text_area :message, :rows => 8, :required => 'required', :placeholder => t('message', :scope => 'activerecord.attributes.refinery/inquiries/inquiry') %>
+          </div>
+          <div class="actions">
+            <%= f.submit "Submit" %>
+            <%#= link_to t('.privacy_policy'), "/pages/privacy-policy", :id => "privacy_link" if Refinery::Inquiries.show_contact_privacy_link %>
+          </div>
+        <% end %>
+      </div>
+    </section>
+  </div>
+</div>

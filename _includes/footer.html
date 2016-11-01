@@ -1,0 +1,39 @@
+<div class="content_container">
+	<span class='contact'>
+    <a href="/contact">Contact</a>
+	</span>
+
+  <nav id="footermenu" class="footermenu">
+		<ul>
+			{% for item in site.navigation.footer %}
+				<li>
+					<a href="{{ item.url }}">{{ item.name }}</a>
+					<ul>
+						{% assign entries = site.pages | sort: "path" %}
+				    {% for entry in entries %}
+
+							{% assign components = entry.url | split: "/" %}
+							{% assign count = components | size %}
+
+							{% if count == 3 %}
+								{% assign nested = item.url | split: "/" %}
+								{% if components[1] == nested[1] %}
+			            <li>
+		                <a href="{{ entry.url }}">{{ entry.title }}</a>
+			            </li>
+								{% endif %}
+							{% endif %}
+
+				    {% endfor %}
+					</ul>
+				</li>
+			{% endfor %}
+		</ul>
+	</nav>
+
+	<div class="pad clearfix"></div>
+</div>
+<div class="seperator"></div>
+<div class="content_container">
+	<p>&copy; {{ site.time | date: '%Y' }} Abel Solutions Limited</p>
+</div>

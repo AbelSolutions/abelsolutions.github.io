@@ -1,0 +1,25 @@
+<div class="content_container">
+	<div id='logo'>
+    <a href="/">
+      <img src="/img/header_logo.png">
+    </a>
+	</div>
+
+  <nav id="menu" class="menu">
+    <ul>
+			{% for item in site.navigation.header %}
+				{% if page.url == item.url %}
+		      <li class="selected">
+						<a href="{{ item.url }}">{{ item.name }}</a></li>
+					</li>
+				{% else %}
+		      <li>
+						<a href="{{ item.url }}">{{ item.name }}</a></li>
+					</li>
+		    {% endif %}
+			{% endfor %}
+    </ul>
+  </nav>
+
+</div>
+<div class="seperator clearfix"></div>
