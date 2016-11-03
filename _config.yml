@@ -45,9 +45,12 @@ navigation:
 
 
 collections:
-- staff
-- testimonials
-- case-studies
+  staff:
+    output: true
+  testimonials:
+    output: true
+  case_studies:
+    output: true
 
 # Build settings
 markdown: kramdown

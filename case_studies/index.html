@@ -1,0 +1,56 @@
+---
+layout: page
+title: Case Studies
+permalink: /case_studies/
+---
+
+<div class="content_container">
+    <section id="side_menu">
+        <nav>
+            <div class="root">
+                <a href="http://abelsolutions.co.nz/solutions">Solutions</a>
+            </div>
+            <ul>
+                <li class="selected first">
+                    <a href="/case_studies">Case Studies</a></li>
+                <li>
+                    <a href="/testimonials">Testimonials</a></li>
+                <li class="last">
+                    <a href="/solutions/industries">Industries</a>
+                    <ul class="clearfix">
+                        <li class="first">
+                            <a href="/solutions/industries/abel-for-the-automotive-industry">Abel for the Automotive Industry</a></li>
+                        <li>
+                            <a href="/solutions/industries/abel-for-the-life-sciences-and-pharmaceutical-industry">Abel for the Life Sciences and Pharmaceutical Industry</a></li>
+                        <li>
+                            <a href="/solutions/industries/abel-for-the-food-and-beverage-industry">Abel for the Food and Beverage Industry</a></li>
+                        <li>
+                            <a href="/solutions/industries/abel-for-the-apparel-industry">Abel for the Apparel Industry</a></li>
+                        <li>
+                            <a href="/solutions/industries/abel-for-the-electronics-industry">Abel for the Electronics Industry</a></li>
+                        <li class="last">
+                            <a href="/solutions/industries/abel-erp-for-plastics-manufacturing">Abel ERP for Plastics Manufacturing</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <section id="body">
+        {% for case_study in site.case_studies %}
+        <div class="case">
+            <img src="{{ case_study.img }}" width=74 height=80 class="photo"></img>
+            <h2>
+          <a href="{{ case_study.permalink }}">
+            {{ case_study.title }}
+          </a>
+        </h2>
+            <p>{{ case_study.content | strip_html | truncate: 160 }}</p>
+        </div>
+        {% endfor %}
+    </section>
+
+    <section id="snippets">
+
+    </section>
+</div>

@@ -4,7 +4,6 @@ layout: default
 
 <div class="clearfix"></div>
 <div id="home">
-
 	<div id="hero">
 		<!-- Universal Access -->
 		<div class="content_container">
@@ -119,12 +118,27 @@ layout: default
 					<a href="/case_studies">View by Industry</a>
 				</p>
 				<div class="row">
-					<%= render @case_studies, :abstract => true if @case_studies.present? %>
+					{% assign items = site.case_studies | sort: 'date' %}
+					{% for case_study in items limit:4 %}
+						<div class="case">
+							<img src="{{ case_study.img }}" width=120 height=80 class="photo"></img>
+							<h2>
+								<a href="{{ case_study.permalink }}">
+									{{ case_study.title }}
+								</a>
+							</h2>
+							<p>{{ case_study.content | strip_html | truncate: 160 }}</p>
+						</div>
+					{% endfor %}
+
+					<!-- <%= render @case_studies, :abstract => true if @case_studies.present? %> -->
 				</div>
 			</div>
 			<div class="testimonials">
 				<h1>Testimonial</h1>
-				<%= render @testimonial if @testimonial.present? %>
+				{% for testimonial in site.testimonials limit:1 %}
+						{{ testimonial.content }}
+				{% endfor %}
 			</div>
 		</div>
 	</div>

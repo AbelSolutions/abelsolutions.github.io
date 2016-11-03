@@ -436,6 +436,7 @@ header {
         border: 3px solid white;
         background-color: $dark-blue;
         box-shadow:0px 2px 3px #777;
+        object-fit: contain;
       }
 
       h2 {
@@ -1237,4 +1238,14 @@ nav#next_prev_article {
 			margin-bottom: 3px;
 		}
 	}
+}
+.image-align-right {
+    float: right;
+    margin-left: 6px;
+    margin-bottom: 6px;
+}
+.image-align-left {
+    float: left;
+    margin-right: 6px;
+    margin-bottom: 6px;
 }
