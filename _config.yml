@@ -27,10 +27,10 @@ navigation:
       url: /erp-functionality/
     - name: Support
       url: /support/
-    - name: About Us
-      url: /about-us/
     - name: Contact
       url: /contact/
+    - name: About Us
+      url: /about-us/
   footer:
     - name: Services
       url: /services/
