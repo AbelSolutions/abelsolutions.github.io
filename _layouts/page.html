@@ -8,25 +8,43 @@ layout: default
   <section id="side_menu">
      <nav>
       <div class="root">
-        <a href="{{ page.url }}">
-          {{ page.title }}
+        {% if page.leaf == null %}
+          <a href="{{ page.url }}">
+            {{ page.title }}
+        {% else %}
+          <a href="{{ page.leaf }}">
+            {{ page.parentTitle }}
+        {% endif %}
         </a>
       </div>
       <ul>
         {% for sub_page in site.pages %}
+          {% if page.leaf == null %}
+            {% assign page_id = sub_page.permalink | urlmatch_plugin %}
+            {% if page_id == page.permalink %}
+              <li class="first">
+                <a href="{{ sub_page.url }}">
+                  {{ sub_page.title }}
+                </a>
+              </li>
+            {% endif %}
+          {% else %}
           {% assign page_id = sub_page.permalink | urlmatch_plugin %}
-          {% if page_id == page.permalink %}
-            <li class="first">
-              <a href="{{ sub_page.url }}">
-                {{ sub_page.title }}
-              </a>
-            </li>
+            {% if page_id == page.leaf %}
+              {% if sub_page.permalink == page.permalink %}
+                <li class="first selected">
+              {% else %}
+                <li class="first">
+              {% endif %}
+                <a href="{{ sub_page.url }}">
+                  {{ sub_page.title }}
+                </a>
+              </li>
+            {% endif %}
           {% endif %}
         {% endfor %}
       </ul>
      </nav>
   </section>
-  <section id="body">
     {{ content }}
-  </section>
 </div>

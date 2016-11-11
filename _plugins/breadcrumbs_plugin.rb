@@ -14,6 +14,11 @@ module Jekyll
       url.pop
       url.join('/') + '/'
     end
+
+    def get_first_url_part(input)
+      url = input.split('/')
+      return "/#{url[1]}/"
+    end
   end
 end
 

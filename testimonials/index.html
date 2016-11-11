@@ -1,9 +1,42 @@
 ---
-layout: page
+layout: default
 title: Testimonials
 permalink: /testimonials/
 ---
+{% include subheader.html %}
 
-<div class="testimonials">
-    {% for testimonial in site.testimonials %} {{ testimonial.content }} {% endfor %}
-</div>
+<section id="side_menu">
+    <nav>
+        <div class="root">
+            <a href="http://abelsolutions.co.nz/solutions">Solutions</a>
+        </div>
+        <ul>
+            <li class="first">
+                <a href="/case_studies">Case Studies</a></li>
+            <li class="selected">
+                <a href="/testimonials">Testimonials</a></li>
+            <li class="last">
+                <a href="/solutions/industries">Industries</a>
+                <ul class="clearfix">
+                    <li class="first">
+                        <a href="/solutions/industries/abel-for-the-automotive-industry">Abel for the Automotive Industry</a></li>
+                    <li>
+                        <a href="/solutions/industries/abel-for-the-life-sciences-and-pharmaceutical-industry">Abel for the Life Sciences and Pharmaceutical Industry</a></li>
+                    <li>
+                        <a href="/solutions/industries/abel-for-the-food-and-beverage-industry">Abel for the Food and Beverage Industry</a></li>
+                    <li>
+                        <a href="/solutions/industries/abel-for-the-apparel-industry">Abel for the Apparel Industry</a></li>
+                    <li>
+                        <a href="/solutions/industries/abel-for-the-electronics-industry">Abel for the Electronics Industry</a></li>
+                    <li class="last">
+                        <a href="/solutions/industries/abel-erp-for-plastics-manufacturing">Abel ERP for Plastics Manufacturing</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</section>
+<section id="body">
+    <div class="testimonials">
+        {% for testimonial in site.testimonials %} {{ testimonial.content }} {% endfor %}
+    </div>
+</section>
