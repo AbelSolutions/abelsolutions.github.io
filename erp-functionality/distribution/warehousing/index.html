@@ -1,0 +1,92 @@
+---
+layout: page
+title: Warehousing
+permalink: /erp-functionality/distribution/warehousing/
+parentTitle: Distribution
+leaf: /erp-functionality/distribution/
+---
+
+<section id="body">
+    <h1>Warehousing</h1>
+    <h2>Multiple Warehouses</h2>
+    <p>Abel provides multiple warehouse support through stock separation at branch level and/or by content types such as raw materials, finished goods, consumables, quarantine etc. Detailed inventory stock information is provided for each warehouse including
+        on hand quantities, reserved, allocated, back orders, supplier on order and manufacturing and production requirements and supply. Each warehouse records all inventory movements by transaction type such as purchases, sales, transfers and adjustments.
+        Stocking below zero can be prohibited by user choice, but when allowed, Abel provides a unique process of stock valuation checking each time a stocked item goes through zero.</p>
+    <p>Inventory re-order from supplier or manufacture and inter-branch replenish information is tailored for each warehouse and provides variants such as min/max, average usage over time and min/max adjustments to enhance the reorder and replenish processes.
+        Definable usage periods and average supply delivery times are also provided by warehouse and used when calculating reorder quantities. Reorders can be generated at company, warehouse, branch or individual supplier levels.</p>
+    <h2>Warehouse Bins</h2>
+    <p>Each warehouse can optionally contain its own identified bin structure. Bins can contain multiple or single products with each including its UOM, quantity on hand and reserved information. Serial, batch or unique identifiers are also tracked at bin
+        level. Bins can be included or excluded from reorder requirements and can be categorized as to their type such as Default, Dispatch, Manufacture, Consumable etc.<br>Traceability</p>
+    <p>Inventory items may be tracked by Serial Number, Batch Number or Unique Lot Identifier, including product expiry date, from purchase or manufacture, to customer dispatch and sale. This enables the tracking management of items across all processes,
+        including customer consignment and loan stocks, repairs and modifications.</p>
+    <h2>Units of Measure</h2>
+    <p>Multiple units of measure and unit conversion factors can be used for stock storage, stock counts, supplier procurement or customer sales. Alternative Units of Measure can be held against a particular inventory item for multiple supplier and customer
+        variations.</p>
+    <h2>Inventory Costing Controls</h2>
+    <p>Each individual inventory item can be assigned a “control” determining the method by which it is managed at both warehouse and financial levels. These controls include:</p>
+    <ul>
+        <li> Standard Cost<br> </li>
+        <li>Average Cost<br> </li>
+        <li>No Value<br> </li>
+        <li>No Control – Items which are not controlled at either Warehouse or Balance Sheet level and are expensed on purchase and recovered via COGS.<br> </li>
+        <li>No Stock – Items which are held at balance sheet level, but no record is maintained at Warehouse level. No Stock items are purchased to the balance sheet, recovered to the balance sheet via COGS and are valued by manual count adjustment.</li>
+    </ul>
+    <h2>Reorder Processes</h2>
+    <p>This incorporates Supplier Reorder, Manufacture Reorder, Manual Reorder and Branch Replenish where suggested reorder quantities are calculated to satisfy commitments and minimum inventory levels. This process considers determining factors such as:</p>
+    <ul>
+        <li> Minimum and maximum inventory levels<br> </li>
+        <li>Minimum and maximum days coverage<br> </li>
+        <li>Existing cover<br> </li>
+        <li>Lead times<br> </li>
+        <li>Economic and multiple order quantities<br> </li>
+        <li>Current allocations<br> </li>
+        <li>Supplier on order<br> </li>
+        <li>Goods in transit<br> </li>
+        <li>Manufacturing contract commitments</li>
+    </ul>
+    <p>Definable usage periods (at inventory item level) can be used to calculate the reorder quantities which may be amended prior to the auto generation of the Branch Replenishment Orders, Manufacturing Orders or Purchase Orders. Reorders can be generated
+        at company, warehouse, branch or individual supplier level.</p>
+    <h2>Vendor Catalogs</h2>
+    <p>Supplier and manufacture catalogs are supported and can be imported and linked to inventory items. Searches will display the relationships between catalog and inventory items. Catalog items can also be traded with back-to-back purchase orders showing
+        normal delivery or direct to customer.<br>Consignment and Loan Stock</p>
+    <p>Movement of Customer Consignment and Customer Loan stock is performed through a standard dispatch and return process, with those items being held in a separate ledger whist held at the customer location. Standard stock-take and revalue processes can
+        be performed on these ledgers. Supplier indent stock is also available.</p>
+    <h2>Item level Umbrella</h2>
+    <p>Parent items can be defined as a level above inventory items that provide the coding and naming rules for the creation of the inventory information.</p>
+    <p>The item umbrella can restrict inventory creation, by providing up to five extension categories. These categories are used for such things as, but not restricted to, style, size and color. Pricing and reorder information can also be set at the item
+        umbrella level.</p>
+    <h2>Stocktakes and Revaluations</h2>
+    <p>Full, partial and cycle counting are supported. Stocktakes can be built and controlled by Bin selection, Group, or Row, to enable separate stock-take teams to count and complete each section of the warehouse. Both blind and expected count options
+        are provided. As each stocktake is finalized, the necessary adjustments to the stock ledger and general ledger are posted to the appropriate accounting period. An option is available that restricts pre-stocktake transactions from being altered.</p>
+    <p>Warehouse inventory can be revalued by defined selection(s) between Average Cost, Standard Cost and No Value. In addition, manual adjustments to the value of an individual inventory item may also be made. Resulting adjustments to the stock ledger
+        and general ledger are posted to the appropriate accounting period.</p>
+    <h2>Inbound Receipt and Shipping</h2>
+    <p>It is essential that stock receipts are accurately costed and any price variances between the delivery and invoice are correctly accounted for. To achieve this, Abel uses a two step process for local deliveries and an inwards shipping process for
+        overseas deliveries.</p>
+    <p>Local deliveries are normally receipted into the warehouse via a priced supplier delivery which can include additional costs such as freight. When the suppliers invoice is processed, stock values of items still in stock are adjusted where necessary
+        and any remaining variances are posted to user defined accounts in the General Ledger, usually Cost of Goods Sold.</p>
+    <p>Overseas shipping receipts begin with the supplier’s invoices that have already been provided for customs clearance and government tax collection. Invoice details are loaded onto a nominated shipping document including freight, duty, demurrage and
+        fees etc. Additional costs such as local freight can also be included. Costs are then apportioned across the inventory items being receipted according to user defined loadings, and adjusted manually if required prior to the stock being receipted
+        into the warehouse.</p>
+    <h2>Supplier Pricing</h2>
+    <p>Inventory items may have multiple suppliers which may include the supplier’s product details (code and description). Each inventory item can be loaded with a preferred supplier.</p>
+    <p>Inventory supplier information may be recorded, including trading currency and pricing, UOM and conversion factors, multiple quantity price breaks and supplier lead days.</p>
+    <h2>Demand Recognition</h2>
+    <p>Abel provides a group of inventory demands and supplying information across warehouses to control various stock functions and provide the user with an accurate view of quantities on hand and the commitments into the future.</p>
+    <p>Inventory demands include:</p>
+    <ul>
+        <li> Unsatisfied customer on order quantities including reserved, back order and free stock<br> </li>
+        <li>Requirements for manufacture and production consumption which can either be reserved or on order<br> </li>
+        <li>Customer forecast, contracted and quoted quantities<br> </li>
+        <li>Buffer stock of raw materials for contracted manufacture</li>
+    </ul>
+    <p>Inventory supply information includes:</p>
+    <ul>
+        <li> Unsatisfied supplier on order quantities<br> </li>
+        <li>Finished goods currently being manufactured in the plant<br> </li>
+        <li>Supplier forecast, contracted and quoted quantities</li>
+    </ul>
+    <section id="snippets">
+
+    </section>
+</section>
