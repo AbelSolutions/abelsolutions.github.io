@@ -1,0 +1,28 @@
+---
+layout: page
+title: Abel Emailing
+permalink: /erp-functionality/crm/abel-emailing/
+parentTitle: CRM
+leaf: /erp-functionality/crm/
+---
+
+<section id="body">
+    <h1>Abel Emailing</h1>
+    <p>All reports produced in Abel can be emailed in PDF format. When emailing a document the user simply clicks the Email button, confirms the email content and then clicks the Send button. (The document recipient’s email address can be automatically provided.)
+        The email is automatically linked to the document and customer communications log.</p>
+    <p>Emailing has been made simple by directly interfacing with a PDF printer driver. When sending a document or report, a PDF file is automatically generated, attached to the email, and copied to a repository on the server enabling the original attachment
+        to be always easily viewed.</p>
+    <p>Abel offers two processing modes for sending emails, Client or Server:</p>
+    <ul>
+        <li> In Client mode, emails are sent from a queue on the user’s computer. If successful the PDF attachment is placed in the server attachments repository. If unsuccessful, consecutive attempts will be made to re-send the email.</li>
+    </ul>
+    <ul>
+        <li> In Server mode, the PDF attachment is first placed in the server repository, and the email is placed in a queue on the server. Then if not already active, a background process is initiated on the server which processes the queue (i.e. sends the
+            emails).</li>
+    </ul>
+    <p> The advantage of Server mode over Client mode is that when the mail server being used is down or unreachable, the background process will remain active until the email queue has been cleared. This is regardless of whether the user has logged off or
+        gone home. </p>
+    <section id="snippets">
+
+    </section>
+</section>

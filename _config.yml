@@ -43,6 +43,23 @@ navigation:
     - name: About Us
       url: /about-us/
 
+honeycomb:
+  - class_name: odd
+    items:
+      - name: Ecommerce
+        url: /erp/ecommerce/
+        img: /img/honeycomb_ecommerce.png
+        links:
+          - name: Web Store Fronts
+            url: /erp-functionality/ecommerce/web-store-fronts#content
+      - name: Another
+        url: /erp/asd/
+        img: /img/honeycomb_ecommerce.png
+        links:
+          - name: Fred
+            url: /erp/ecommerce/fred/
+  - class_name: even
+
 
 collections:
   staff:

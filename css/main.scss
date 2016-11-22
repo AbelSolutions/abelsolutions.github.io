@@ -999,7 +999,7 @@ form {
 }
 
 #honeycomb {
-	background-image: url("honeycomb.png");
+	background-image: url("/img/honeycomb.png");
 	background-repeat:no-repeat;
 	background-position:center top;
 	height: 612px - 30px;
@@ -1039,8 +1039,12 @@ form {
 
 			text-align: center;
 
+      .selected_content {
+        display: none;
+      }
+
 			.selected {
-				background-image: url("honeycomb_selected_large.png");
+				background-image: url("/img/honeycomb_selected_large.png");
 				background-repeat:no-repeat;
 				background-position:left top;
 				margin-left: -49px;
@@ -1061,6 +1065,7 @@ form {
 				}
 
 				.selected_content {
+          display: block;
 					position: relative;
 					z-index: 10;
 
