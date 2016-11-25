@@ -47,18 +47,125 @@ honeycomb:
   - class_name: odd
     items:
       - name: Ecommerce
-        url: /erp/ecommerce/
+        url: /erp-functionality/ecommerce/
         img: /img/honeycomb_ecommerce.png
         links:
           - name: Web Store Fronts
             url: /erp-functionality/ecommerce/web-store-fronts#content
-      - name: Another
-        url: /erp/asd/
-        img: /img/honeycomb_ecommerce.png
+          - name: Integration to EDI
+            url: /erp-functionality/ecommerce/integration-to-edi#content
+          - name: Apple iOS Apps
+            url: /erp-functionality/ecommerce/apple-ios-apps#content
+          - name: More ...
+            url: /erp-functionality/ecommerce#more
+
+      - name: Integration
+        url: /erp-functionality/integration/
+        img: /img/honeycomb_integration.png
         links:
-          - name: Fred
-            url: /erp/ecommerce/fred/
+          - name: To Design Software
+            url: /erp-functionality/integration/integration-to-design-software#content
+          - name: Websites
+            url: /erp-functionality/integration/integration-to-websites#content
+          - name: Logistic Companies
+            url: /erp-functionality/integration/integrated-3rd-party-logistics#content
+          - name: Ecommerce Platforms
+            url: /erp-functionality/integration/integration-to-ecommerce-platforms#content
+          - name: BI Tools
+            url: /erp-functionality/integration/integration-to-bi-tools#content
+          - name: More ...
+            url: /erp-functionality/integration#more
+
+      - name: BI Tools
+        url: /erp-functionality/bi-tools/
+        img: /img/honeycomb_bi-tools.png
+        links:
+          - name: Inbuilt Report Writer
+            url: /erp-functionality/bi-tools/3rd-party-bi-tools#content
+          - name: Web Dashboards
+            url: /erp-functionality/bi-tools/web-dashboards#content
+          - name: SQL Extraction
+            url: /erp-functionality/bi-tools/sql-extraction#content
+          - name: Third Party BI Tools
+            url: /erp-functionality/bi-tools/3rd-party-bi-tools#content
+          - name: More ...
+            url: /erp-functionality/bi-tools#more
+
+      - name: Inventory Management
+        url: /erp-functionality/inventory-management/
+        img: /img/honeycomb_inventory-management.png
+        links:
+          - name: Multiple Warehouses
+            url: /erp-functionality/inventory-management/multiple-warehouses#content
+          - name: Traceability
+            url: /erp-functionality/inventory-management/traceability#content
+          - name: Units of Measure (UOM)
+            url: /erp-functionality/inventory-management/units-of-measure#content
+          - name: Inventory Costing Controls
+            url: /erp-functionality/inventory-management/inventory-costing-control#content
+          - name: Reorder Processes
+            url: /erp-functionality/inventory-management/reorder-processes#content
+          - name: More ...
+            url: /erp-functionality/bi-tools#more
+
+      - name: Pricing Management
+        url: /erp-functionality/pricing-management/
+        img: /img/honeycomb_pricing-management.png
+        links:
+          - name: Base Pricing
+            url: /erp-functionality/pricing-management/base-pricing#content
+          - name: Cost Pricing
+            url: /erp-functionality/pricing-management/cost-pricing#content
+          - name: Sales Pricing
+            url: /erp-functionality/inventory-management/sales-pricing#content
+          - name: Other Pricing
+            url: /erp-functionality/inventory-management/other-pricing#content
+          - name: More ...
+            url: /erp-functionality/inventory-management#more
+
+      - name: Approvals
+        url: /erp-functionality/approvals/
+        img: /img/honeycomb_approvals.png
+        links:
+          - name: Control Procurement
+            url: /erp-functionality/approvals/control-procurement#content
+          - name: Traceability and Compliance
+            url: /erp-functionality/approvals/traceability-and-compliance#content
+          - name: Definable User Matricies
+            url: /erp-functionality/approvals/definable-user-matrixes#content
+          - name: More ...
+            url: /erp-functionality/approvals#more
   - class_name: even
+    items:
+      - name: System Security
+        url: /erp-functionality/system-security/
+        img: /img/honeycomb_system-security.png
+        links:
+          - name: System Activity Audit
+            url: /erp-functionality/system-security/system-activity-audit#content
+          - name: System Process Enquiry
+            url: /erp-functionality/system-security/system-process-enquiry#content
+          - name: Secure Database
+            url: /erp-functionality/system-security/secure-database#content
+          - name: More ...
+            url: /erp-functionality/system-security#more
+
+      - name: Distribution
+        url: /erp-functionality/distribution/
+        img: /img/honeycomb_distribution.png
+        links:
+          - name: Supplier Information
+            url: /erp-functionality/distribution/supplier-information#content
+          - name: Customer Information
+            url: /erp-functionality/distribution/customer-information#content
+          - name: Warehousing
+            url: /erp-functionality/distribution/warehousing#content
+          - name: Logistics
+            url: /erp-functionality/distribution/logistics#content
+          - name: Integration
+            url: /erp-functionality/distribution/Integration#content
+          - name: More ...
+            url: /erp-functionality/distribution#more
 
 
 collections:
