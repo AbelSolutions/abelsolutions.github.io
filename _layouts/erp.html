@@ -2,6 +2,7 @@
 layout: default
 ---
 {% include subheader.html %}
+
 <div id="erp">
 	<div id="hero">
 		<div id="honeycomb">
@@ -9,7 +10,7 @@ layout: default
         {% for row in site.honeycomb %}
 					<div class="row {{row.class_name}}">
 						{% for item in row.items %}
-							{% if false %}
+							{% if page.permalink == item.url or page.leaf != null and page.leaf == item.url %}
 								<span class="item">
 									<div class="selected">
 										<div class="fit">

@@ -102,11 +102,11 @@ honeycomb:
           - name: Units of Measure (UOM)
             url: /erp-functionality/inventory-management/units-of-measure#content
           - name: Inventory Costing Controls
-            url: /erp-functionality/inventory-management/inventory-costing-control#content
+            url: /erp-functionality/inventory-management/inventory-costing-controls#content
           - name: Reorder Processes
             url: /erp-functionality/inventory-management/reorder-processes#content
           - name: More ...
-            url: /erp-functionality/bi-tools#more
+            url: /erp-functionality/inventory-management#more
 
       - name: Pricing Management
         url: /erp-functionality/pricing-management/
@@ -117,11 +117,11 @@ honeycomb:
           - name: Cost Pricing
             url: /erp-functionality/pricing-management/cost-pricing#content
           - name: Sales Pricing
-            url: /erp-functionality/inventory-management/sales-pricing#content
+            url: /erp-functionality/pricing-management/sales-pricing#content
           - name: Other Pricing
-            url: /erp-functionality/inventory-management/other-pricing#content
+            url: /erp-functionality/pricing-management/other-pricing#content
           - name: More ...
-            url: /erp-functionality/inventory-management#more
+            url: /erp-functionality/pricing-management#more
 
       - name: Approvals
         url: /erp-functionality/approvals/
@@ -130,7 +130,7 @@ honeycomb:
           - name: Control Procurement
             url: /erp-functionality/approvals/control-procurement#content
           - name: Traceability and Compliance
-            url: /erp-functionality/approvals/traceability-and-compliance#content
+            url: /erp-functionality/approvals/traceability-compliance#content
           - name: Definable User Matricies
             url: /erp-functionality/approvals/definable-user-matrixes#content
           - name: More ...
@@ -163,10 +163,226 @@ honeycomb:
           - name: Logistics
             url: /erp-functionality/distribution/logistics#content
           - name: Integration
-            url: /erp-functionality/distribution/Integration#content
+            url: /erp-functionality/distribution/integration#content
           - name: More ...
             url: /erp-functionality/distribution#more
 
+      - name: Financials
+        url: /erp-functionality/financials/
+        img: /img/honeycomb_financials.png
+        links:
+          - name: General Ledger
+            url: /erp-functionality/financials/general-ledger#content
+          - name: Cash Management
+            url: /erp-functionality/financials/cash-management#content
+          - name: Accounts Payable
+            url: /erp-functionality/financials/accounts-payable#content
+          - name: Accounts Receivable
+            url: /erp-functionality/financials/accounts-receivable#content
+          - name: Fixed Assets
+            url: /erp-functionality/financials/fixed-assets#content
+          - name: More ...
+            url: /erp-functionality/financials#more
+
+      - name: Sales
+        url: /erp-functionality/sales/
+        img: /img/honeycomb_sales.png
+        links:
+          - name: Simplified Order Entry
+            url: /erp-functionality/sales/simplified-order-entry#content
+          - name: Traceability of Supply Chain
+            url: /erp-functionality/sales/traceability-of-supply-chain#content
+          - name: Mobile Sales
+            url: /erp-functionality/sales/mobile-sales#content
+          - name: CRM Functionality
+            url: /erp-functionality/sales/crm-functionality#content
+          - name: More ...
+            url: /erp-functionality/sales#more
+
+      - name: CRM
+        url: /erp-functionality/crm/
+        img: /img/honeycomb_crm.png
+        links:
+          - name: Sales Pipeline
+            url: /erp-functionality/crm/sales-pipeline#content
+          - name: Campaign Building
+            url: /erp-functionality/crm/campaign-building#content
+          - name: Task Management
+            url: /erp-functionality/crm/task-management#content
+          - name: Notes and Messages
+            url: /erp-functionality/crm/notes-and-messages#content
+          - name: Abel Emailing
+            url: /erp-functionality/crm/abel-emailing#content
+          - name: More ...
+            url: /erp-functionality/crm#more
+
+
+  - class_name: odd
+    items:
+      - name: Asset Management
+        url: /erp-functionality/asset-management/
+        img: /img/honeycomb_asset-management.png
+        links:
+          - name: Fixed Assets Management
+            url: /erp-functionality/asset-management/fixed-assets-management#content
+          - name: Management of Plant and Equipment
+            url: /erp-functionality/asset-management/management-of-plant-and-equipment#content
+          - name: Mobile Integration
+            url: /erp-functionality/asset-management/mobile-integration#content
+          - name: More ...
+            url: /erp-functionality/asset-management#more
+
+      - name: Production, Planning & Scheduling
+        url: /erp-functionality/production-planning-scheduling/
+        img: /img/honeycomb_production-planning-scheduling.png
+        links:
+          - name: Production Scheduling
+            url: /erp-functionality/production-planning-scheduling/production-scheduling#content
+          - name: Material Requirements Planning
+            url: /erp-functionality/production-planning-scheduling/material-requirements-planning#content
+          - name: Manufacturing Resource Planning
+            url: /erp-functionality/production-planning-scheduling/manufacturing-resource-planning#content
+          - name: Master Production Scheduling
+            url: /erp-functionality/production-planning-scheduling/master-production-scheduling#content
+          - name: Capacity Requirements Planning
+            url: /erp-functionality/production-planning-scheduling/capacity-requirements-planning#content
+          - name: More ...
+            url: /erp-functionality/production-planning-scheduling#more
+
+      - name: Supply Chain
+        url: /erp-functionality/supply-chain/
+        img: /img/honeycomb_supply-chain.png
+        links:
+          - name: Supplier Orders
+            url: /erp-functionality/supply-chain/supplier-orders#content
+          - name: Supplier Delivery
+            url: /erp-functionality/supply-chain/supplier-delivery#content
+          - name: Supplier Return
+            url: /erp-functionality/supply-chain/supplier-return#content
+          - name: Shipping Delivery
+            url: /erp-functionality/supply-chain/shipping-delivery#content
+          - name: Supplier Invoice
+            url: /erp-functionality/supply-chain/supplier-invoice#content
+          - name: More ...
+            url: /erp-functionality/supply-chain#more
+
+      - name: Manufacturing & Production
+        url: /erp-functionality/manufacturing-production/
+        img: /img/honeycomb_manufacturing-production.png
+        links:
+          - name: Production Workflows
+            url: /erp-functionality/manufacturing-production/production-workflows#content
+          - name: Bill of Materials
+            url: /erp-functionality/manufacturing-production/bill-of-materials#content
+          - name: Production Costing
+            url: /erp-functionality/manufacturing-production/production-costing#content
+          - name: Production Planning
+            url: /erp-functionality/manufacturing-production/production-planning#content
+          - name: Production Scheduling
+            url: /erp-functionality/manufacturing-production/production-scheduling#content
+          - name: More ...
+            url: /erp-functionality/manufacturing-production#more
+
+      - name: Jobbing
+        url: /erp-functionality/jobbing/
+        img: /img/honeycomb_jobbing.png
+        links:
+          - name: BOMS
+            url: /erp-functionality/jobbing/bill-of-materials-boms#content
+          - name: Designer BOMS
+            url: /erp-functionality/jobbing/designer-bill-of-materials-boms#content
+          - name: Job Costing
+            url: /erp-functionality/jobbing/job-costing#content
+          - name: External Manufacturing
+            url: /erp-functionality/jobbing/external-manufacturing#content
+          - name: Defect and Rework Tracking
+            url: /erp-functionality/jobbing/defect-and-rework-tracking#content
+          - name: More ...
+            url: /erp-functionality/jobbing#more
+
+      - name: Mobile
+        url: /erp-functionality/mobile/
+        img: /img/honeycomb_mobile.png
+        links:
+          - name: Mobile Sales
+            url: /erp-functionality/mobile/mobile-sales#content
+          - name: Mobile Asset Management
+            url: /erp-functionality/mobile/mobile-asset-management#content
+          - name: Designer Mobile Solutions
+            url: /erp-functionality/mobile/designer-mobile-solutions#content
+          - name: Mobile Warehousing
+            url: /erp-functionality/mobile/mobile-warehousing#content
+          - name: More ...
+            url: /erp-functionality/mobile#more
+
+  - class_name: even
+    items:
+      - name: Workflow
+        url: /erp-functionality/workflow/
+        img: /img/honeycomb_workflow.png
+        links:
+          - name: Desktops
+            url: /erp-functionality/workflow/desktops#content
+          - name: Financial Desktops
+            url: /erp-functionality/workflow/financial-desktops#content
+          - name: Distribution Desktops
+            url: /erp-functionality/workflow/distribution-desktops#content
+          - name: Jobbing Desktops
+            url: /erp-functionality/workflow/jobbing-desktops#content
+          - name: More ...
+            url: /erp-functionality/workflow#more
+
+      - name: Quality Assurance
+        url: /erp-functionality/quality-assurance/
+        img: /img/honeycomb_quality-assurance.png
+        links:
+          - name: Compliance
+            url: /erp-functionality/quality-assurance/compliance#content
+          - name: Quality Controls
+            url: /erp-functionality/quality-assurance/quality-controls#content
+          - name: Key Features
+            url: /erp-functionality/quality-assurance/key-features#content
+          - name: More ...
+            url: /erp-functionality/quality-assurance#more
+
+      - name: Human Resource Management
+        url: /erp-functionality/human-resource-management/
+        img: /img/honeycomb_human-resource-management.png
+        links:
+          - name: Payroll
+            url: /erp-functionality/human-resource-management/payroll#content
+          - name: Human Resources
+            url: /erp-functionality/human-resource-management/human-resources#content
+          - name: Organisational Data
+            url: /erp-functionality/human-resource-management/organisational-data#content
+          - name: More ...
+            url: /erp-functionality/human-resource-management#more
+
+      - name: MRP
+        url: /erp-functionality/mrp/
+        img: /img/honeycomb_mrp.png
+        links:
+          - name: Material Requirements Planning
+            url: /erp-functionality/mrp/material-requirements-planning-mrp-i#content
+          - name: Manufacturing Resource Planning
+            url: /erp-functionality/mrp/manufacturing-resource-planning-mrp-ii#content
+          - name: Manufacturing and Production
+            url: /erp-functionality/mrp/manufacturing-and-production#content
+          - name: Production, Planning and Scheduling
+            url: /erp-functionality/mrp/manufacturing-production-planning-and-scheduling#content
+          - name: More ...
+            url: /erp-functionality/mrp#more
+
+      - name: PLM
+        url: /erp-functionality/plm/
+        img: /img/honeycomb_plm.png
+        links:
+          - name: Product Life Cycle Intelligence
+            url: /erp-functionality/plm/product-life-cycle-intelligence#content
+          - name: PLM for Apparel
+            url: /erp-functionality/plm/plm-for-apparel#content
+          - name: More ...
+            url: /erp-functionality/plm#more
 
 collections:
   staff:
