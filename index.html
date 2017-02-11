@@ -9,7 +9,7 @@ layout: default
 		<div class="content_container">
 			<div class="box" id="universal-access">
 				<div class="content">
-					<%= image_tag "hero_mobile.png", :id => "hero-mobile", :class => "fade" %>
+          <img src="/img/hero_mobile.png" id="hero-mobile" class: 'fade' />
 					<div class="text">
 						<h1>Manage More</h1>
 						<p>
@@ -18,14 +18,38 @@ layout: default
 						<a href="/services/universal-access" class="btn">Learn More</a>
 					</div>
 				</div>
-				<%= render "tabs" %>
+        <div class="row">
+          <div class="tab universal-access-button">
+            <div class="tab-content">
+              <h3>Universal<br/>Access</h3>
+            </div>
+          </div>
+          <div class="tab improved-performance-button">
+            <div class="tab-content">
+              <h3>Implementation<br/>Experts</h3>
+            </div>
+          </div>
+          <div class="tab improved-profitability-button">
+            <div class="tab-content">
+              <h3>Improved<br/>Profitability</h3>
+            </div>
+          </div>
+          <div class="tab unique-functionality-button">
+            <div class="tab-content">
+              <h3>Unique<br/>Functionality</h3>
+            </div>
+          </div>
+        </div>
 			</div>
 			<!-- Improved Performance -->
 			<div class="box"  id="improved-performance">
 				<div class="content">
-          <% origin = request.env['HTTP_ORIGIN'] || "http://localhost:59443" %>
-          <iframe class="video" id="ytplayer" width="560" height="315" src="http://www.youtube.com/embed/3bwPBw9VQrU?rel=0&autohide=1&controls=0&enablejsapi=1&origin=<%= origin %>" frameborder="0" allowfullscreen></iframe>
+          <iframe class="video" id="ytplayer" width="560" height="315" frameborder="0" allowfullscreen></iframe>
           <script>
+
+          var yt = document.getElementById('ytplayer');
+          var origin = window.location.host;
+          yt.src = "http://www.youtube.com/embed/3bwPBw9VQrU?rel=0&autohide=1&controls=0&enablejsapi=1&origin=" + origin;
 
           var tag = document.createElement('script');
           tag.src = "//www.youtube.com/iframe_api";
@@ -79,7 +103,28 @@ layout: default
 						<a href="/services/erp-implementation-experts" class="btn">Learn More</a>
 					</div>
 				</div>
-				<%= render "tabs" %>
+        <div class="row">
+          <div class="tab universal-access-button">
+            <div class="tab-content">
+              <h3>Universal<br/>Access</h3>
+            </div>
+          </div>
+          <div class="tab improved-performance-button">
+            <div class="tab-content">
+              <h3>Implementation<br/>Experts</h3>
+            </div>
+          </div>
+          <div class="tab improved-profitability-button">
+            <div class="tab-content">
+              <h3>Improved<br/>Profitability</h3>
+            </div>
+          </div>
+          <div class="tab unique-functionality-button">
+            <div class="tab-content">
+              <h3>Unique<br/>Functionality</h3>
+            </div>
+          </div>
+        </div>
 			</div>
 			<div class="box" id="improved-profitability">
 				<div class="content">
@@ -91,7 +136,28 @@ layout: default
 						<a href="/services/profitability-improvement-experts" class="btn">Learn More</a>
 					</div>
 				</div>
-				<%= render "tabs" %>
+        <div class="row">
+          <div class="tab universal-access-button">
+            <div class="tab-content">
+              <h3>Universal<br/>Access</h3>
+            </div>
+          </div>
+          <div class="tab improved-performance-button">
+            <div class="tab-content">
+              <h3>Implementation<br/>Experts</h3>
+            </div>
+          </div>
+          <div class="tab improved-profitability-button">
+            <div class="tab-content">
+              <h3>Improved<br/>Profitability</h3>
+            </div>
+          </div>
+          <div class="tab unique-functionality-button">
+            <div class="tab-content">
+              <h3>Unique<br/>Functionality</h3>
+            </div>
+          </div>
+        </div>
 			</div>
 			<div class="box" id="unique-functionality">
 				<div class="content">
@@ -103,7 +169,28 @@ layout: default
 						<a href="/services/systems-design-specialists" class="btn">Learn More</a>
 					</div>
 				</div>
-				<%= render "tabs" %>
+        <div class="row">
+          <div class="tab universal-access-button">
+            <div class="tab-content">
+              <h3>Universal<br/>Access</h3>
+            </div>
+          </div>
+          <div class="tab improved-performance-button">
+            <div class="tab-content">
+              <h3>Implementation<br/>Experts</h3>
+            </div>
+          </div>
+          <div class="tab improved-profitability-button">
+            <div class="tab-content">
+              <h3>Improved<br/>Profitability</h3>
+            </div>
+          </div>
+          <div class="tab unique-functionality-button">
+            <div class="tab-content">
+              <h3>Unique<br/>Functionality</h3>
+            </div>
+          </div>
+        </div>
 			</div>
 		</div>
 	</div>
@@ -131,7 +218,6 @@ layout: default
 						</div>
 					{% endfor %}
 
-					<!-- <%= render @case_studies, :abstract => true if @case_studies.present? %> -->
 				</div>
 			</div>
 			<div class="testimonials">
