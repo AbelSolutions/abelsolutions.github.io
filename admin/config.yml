@@ -3,3 +3,15 @@ backend:
   repo: abelsolutions/abelsolutions.github.io # Path to your Github repository
   branch: master # Branch to update
 media_folder: "img"
+collections:
+  - name: "case-studies"
+    label: "Case Studies"
+    folder: "_case_studies"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "img", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
