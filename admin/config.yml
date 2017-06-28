@@ -2,4 +2,4 @@ backend:
   name: github
   repo: abelsolutions/abelsolutions.github.io # Path to your Github repository
   branch: master # Branch to update
-  media_folder: "img"
+media_folder: "img"
