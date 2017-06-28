@@ -72,7 +72,7 @@ permalink: /contact/
         		Australia
         	</a>
 
- 
+
         	<div class="telephone">
         		<span class="key">
         			Sales
@@ -151,21 +151,21 @@ permalink: /contact/
     <section id='body'>
       <p>Get in touch with us. Just use the form below and we'll get back to you as soon as we can.</p>
       <div class="inquiries">
-        <form accept-charset="UTF-8" action="/contact" class="new_inquiry" id="new_inquiry" method="post">
+        <form accept-charset="UTF-8" action="contact/thank-you" class="new_inquiry" id="new_inquiry" method="post" netlify>
           <div class="field">
-            <input class="text" id="inquiry_name" name="inquiry[name]" placeholder="Name" required="required" size="30" type="text">
+            <input class="text" id="inquiry_name" name="name" placeholder="Name" required="required" size="30" type="text">
           </div>
           <div class="field">
-            <input class="text email" id="inquiry_email" name="inquiry[email]" placeholder="Email" required="required" size="30" type="email">
+            <input class="text email" id="inquiry_email" name="email" placeholder="Email" required="required" size="30" type="email">
           </div>
           <div class="field">
-            <input class="text company" id="inquiry_company" name="inquiry[company]" placeholder="Company" size="30" type="text">
+            <input class="text company" id="inquiry_company" name="company" placeholder="Company" size="30" type="text">
           </div>
           <div class="field">
-            <input class="text industry" id="inquiry_industry" name="inquiry[industry]" placeholder="Industry" size="30" type="text">
+            <input class="text industry" id="inquiry_industry" name="industry" placeholder="Industry" size="30" type="text">
           </div>
           <div class="field message_field">
-            <textarea cols="40" id="inquiry_message" name="inquiry[message]" placeholder="Message" required="required" rows="8"></textarea>
+            <textarea cols="40" id="inquiry_message" name="message" placeholder="Message" required="required" rows="8"></textarea>
           </div>
           <div class="actions">
             <input name="commit" type="submit" value="Submit">
